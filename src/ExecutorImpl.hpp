@@ -16,6 +16,7 @@ namespace adas
 
     public:
         Pose Query() const noexcept override;
+        void Execute(const std::string &commands) noexcept override;
 
     private:
         Pose pose;
